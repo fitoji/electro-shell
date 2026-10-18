@@ -1,0 +1,11 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Cachés y archivos de sistema
+.ruff_cache/
+.DS_Store
+
+# Regenerable por la extensión skill-registry (comando /skill-registry:refresh)
+.atl/

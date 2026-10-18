@@ -1,0 +1,15 @@
+{
+  "name": "electro-study-shell",
+  "version": "0.1.0",
+  "description": "Paquete de skills y prompts para agentes Pi enfocado en estudio de electrotecnia, memorias técnicas, documentos y diagramas Mermaid.",
+  "license": "MIT",
+  "keywords": ["pi-package", "agent-skills", "electrotecnia", "rebt", "mermaid"],
+  "files": ["skills", "prompts", "scripts", "AGENTS.md", "README.md"],
+  "pi": {
+    "skills": ["./skills"],
+    "prompts": ["./prompts"]
+  },
+  "scripts": {
+    "validate": "sh scripts/validate-skills.sh"
+  }
+}

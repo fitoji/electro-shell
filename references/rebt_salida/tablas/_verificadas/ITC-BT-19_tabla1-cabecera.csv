@@ -1,0 +1,9 @@
+metodo,descripcion_metodo,c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11
+A,Conductores aislados en tubos empotrados en paredes aislantes,,3x PVC,2x PVC,,3x XLPE o EPR,2x XLPE o EPR,,,,,
+A2,Cables multiconductores en tubos empotrados en paredes aislantes,3x PVC,2x PVC,,3x XLPE o EPR,2x XLPE o EPR,,,,,,
+B,"Conductores aislados en tubos(2) en montaje superficial o empotrados en obra",,,,3x PVC,2x PVC,,,3x XLPE o EPR,2x XLPE o EPR,,
+B2,"Cables multiconductores en tubos(2) en montaje superficial o empotrados en obra",,,3x PVC,2x PVC,,3x XLPE o EPR,,2x XLPE o EPR,,,
+C,"Cables multiconductores directamente sobre la pared(3)",,,,,3x PVC,2x PVC,,3x XLPE o EPR,2x XLPE o EPR,,
+E,"Cables multiconductores al aire libre(2). Distancia a la pared no inferior a 0,3D(5)",,,,,,3x PVC,,2x PVC,3x XLPE o EPR,2x XLPE o EPR,
+F,"Cables unipolares en contacto mutuo(2). Distancia a la pared no inferior a D(5)",,,,,,,3x PVC,,,3x XLPE o EPR(1),
+G,"Cables unipolares separados mínimo D(5)",,,,,,,,,3x PVC(1),,3x XLPE o EPR

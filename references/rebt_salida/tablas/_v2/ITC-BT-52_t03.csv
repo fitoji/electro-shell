@@ -1,0 +1,8 @@
+Alimentación de la estación de recarga,Base de toma de corriente o conector del tipo descrito en: | (¹),Intensidad asignada del punto de conexión,Interruptor automático de protección del punto de conexión,Modo de carga previsto,Ubicación posible del punto de conexión | Viviendas unifamiliares,Ubicación posible del punto de conexión | Aparcamientos en edificios | de viviendas,Ubicación posible del punto de conexión | Otras instalaciones
+Monofásica,Base de toma de corriente: UNE 20315-1-2. Fig. C2a.,–,10 A(²),1 o 2,Sí,Sí,No
+Monofásica,Base de toma de corriente: UNE 20315-2-11. Fig. C7a.,–,10 A(²),1 o 2,Sí,Sí,No
+Monofásica,"UNE-EN 62196-2, tipo 2(³)",16 A,(⁴),3,Sí,Sí,Sí
+Monofásica,"UNE-EN 62196-2, tipo 2(³)",32 A,(⁴),3,Sí,Sí,Sí
+Trifásica,"UNE-EN 62196-2, tipo 2(³)",16 A,(⁴),3,Sí,Sí,Sí
+Trifásica,"UNE-EN 62196-2, tipo 2(³)",32 A,(⁴),3,Sí,Sí,Sí
+Trifásica,"UNE-EN 62196-2, tipo 2(³)",63 A,(⁴),3,No,No,Sí

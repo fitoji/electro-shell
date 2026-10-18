@@ -1,0 +1,5 @@
+Motores de corriente continua | Potencia nominal del motor,Motores de corriente continua | Constante máxima de proporcionalidad entre la intensidad de la corriente de arranque y la de plena carga,Motores de corriente alterna | Potencia nominal del motor,Motores de corriente alterna | Constante máxima de proporcionalidad entre la intensidad de la corriente de arranque y de la de plena carga
+"De 0,75 kW a 1,5 kW","2,5","De 0,75 kW a 1,5 kW","4,5"
+"De 1,5 kW a 5,0 kW","2,0","De 1,5 kW a 5,0 kW","3,0"
+"De más de 5,0 kW","1,5","De 5,0 kW a 15,0 kW","2,0"
+,,"De más de 15,0 kW","1,5"

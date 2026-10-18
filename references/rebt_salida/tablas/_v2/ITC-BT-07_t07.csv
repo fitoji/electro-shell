@@ -1,0 +1,3 @@
+Tipo de cable,"Resistividad térmica del terreno, en K. m/W | 0.80","Resistividad térmica del terreno, en K. m/W | 0.85","Resistividad térmica del terreno, en K. m/W | 0.90","Resistividad térmica del terreno, en K. m/W | 1","Resistividad térmica del terreno, en K. m/W | 1.10","Resistividad térmica del terreno, en K. m/W | 1.20","Resistividad térmica del terreno, en K. m/W | 1.40","Resistividad térmica del terreno, en K. m/W | 1.65","Resistividad térmica del terreno, en K. m/W | 2.00","Resistividad térmica del terreno, en K. m/W | 2.50","Resistividad térmica del terreno, en K. m/W | 2.80"
+Unipolar,1.09,1.06,1.04,1,0.96,0.93,0.87,0.81,0.75,0.68,0.66
+Tripolar,1.07,1.05,1.03,1,0.97,0.94,0.89,0.84,0.78,0.71,0.69

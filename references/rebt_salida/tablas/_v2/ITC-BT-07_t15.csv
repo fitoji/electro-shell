@@ -1,0 +1,5 @@
+Tipo de aislamiento,"Duración del cortocircuito, en segundos | 0.1","Duración del cortocircuito, en segundos | 0.2","Duración del cortocircuito, en segundos | 0.3","Duración del cortocircuito, en segundos | 0.5","Duración del cortocircuito, en segundos | 1.0","Duración del cortocircuito, en segundos | 1.5","Duración del cortocircuito, en segundos | 2.0","Duración del cortocircuito, en segundos | 2.5","Duración del cortocircuito, en segundos | 3.0"
+XLPE y EPR,449,318,259,201,142,116,100,90,82
+PVC,,,,,,,,,
+Sección ≤ 300 mm²,364,257,210,163,115,94,81,73,66
+Sección > 300 mm²,322,228,186,144,102,83,72,64,59
