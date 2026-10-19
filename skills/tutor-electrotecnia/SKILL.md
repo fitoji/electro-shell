@@ -8,8 +8,8 @@ metadata:
 ---
 
 ## Activation Contract
-- Activar para explicar conceptos, proponer ejercicios, repasar o preparar tests de electrotecnia.
-- No activar para redactar la memoria (usar `memoria-tecnica-electrica`) ni para auditar cálculos ajenos (usar `revisor-calculos-electricos`).
+- Activar para explicar, ejercitar, repasar o preparar tests de electrotecnia.
+- No activar para redactar la memoria (`memoria-tecnica-electrica`) ni para auditar cálculos ajenos (`revisor-calculos-electricos`).
 
 ## Hard Rules
 - Explicar en tres capas: idea en una frase, desarrollo con fórmula y unidades, ejemplo numérico.
@@ -17,44 +17,44 @@ metadata:
 - Un ejercicio resuelto muestra fórmula, datos, sustitución y resultado con unidades.
 - Si el alumno resuelve un ejercicio, corregir sin dar la solución completa hasta que lo pida.
 - Normativa: buscarla en el corpus del proyecto `references/rebt_salida/` (texto en `md/ITC-BT-XX.md`, valores en `tablas/_v2/`) y citar `[FUENTE: md/ITC-BT-XX.md §Y]`; sin corpus o sin cobertura, `[VERIFICAR: ITC-BT-XX]`.
-- **Registro automático**: todo tema explicado o duda resuelta se anota en `apuntes/TEMARIO-REALIZADO.md` antes de cerrar el turno, sin que lo pidan. Sin `apuntes/` en el proyecto, omitirlo.
+- **Cierre de clase**: al terminar la clase, guardar la lección en `apuntes/<TEMA>.md` y registrarla en `apuntes/TEMARIO-REALIZADO.md` antes de cerrar el turno, sin que lo pidan. Sin `apuntes/` en el proyecto, omitirlo.
 
 ## Decision Gates
 | Situación | Acción |
 | --- | --- |
-| Temas fuera del temario propuesto | Explicarlo y proponer añadirlo al temario |
+| Tema fuera del temario propuesto | Explicarlo y proponer añadirlo |
 | El alumno pide solo el resultado | Dar resultado y una línea de método |
 | Concepto con relaciones entre ideas | Ofrecer un diagrama con `mermaid-diagramas` |
 | El alumno falla dos veces | Retroceder al prerrequisito del temario |
-| El tema toca normativa REBT/ITC | Citar del corpus `[FUENTE: md/ITC-BT-XX.md §Y]` si está; si no, `[VERIFICAR]` |
-| Se explicó un tema o se resolvió una duda | Registrar en `apuntes/TEMARIO-REALIZADO.md`; si generó apunte, enlazarlo |
+| Terminó la clase de tutor | Guardar la lección en `apuntes/<TEMA>.md` y registrarla |
 
 ## Execution Steps
-1. Ubicar el tema en `references/temario.md` y sus prerrequisitos; consultar con `memoria-aprendizaje` los errores y conceptos previos de ese tema y adaptar la explicación.
+1. Ubicar el tema y sus prerrequisitos en `references/temario.md`; consultar con `memoria-aprendizaje` errores y conceptos previos, y adaptar la explicación.
 2. Explicar en las tres capas.
 3. Proponer 2–3 ejercicios de dificultad creciente con `assets/plantilla-leccion.md`.
 4. Corregir respuestas indicando el paso donde está el error; guardar el error nuevo o recurrente con `memoria-aprendizaje`.
 5. Cerrar con un resumen de tres líneas y el siguiente tema; guardar el concepto si costó entenderlo.
-6. **Registrar** en `apuntes/TEMARIO-REALIZADO.md` (ver «Registro de estudio»).
+6. **Cerrar**: guardar la lección en `apuntes/<TEMA>.md` y registrarla (ver «Cierre de clase»).
 
-## Registro de estudio (automático)
+## Cierre de clase (automático)
 
-`apuntes/TEMARIO-REALIZADO.md` registra lo **realmente estudiado**, no lo propuesto: admite temas fuera de orden, consultas sueltas y dudas puntuales. Se actualiza **antes** de cerrar el turno, sin que lo pidan:
+Al terminar la clase, **antes** de cerrar el turno y sin que lo pidan:
 
-- Añadir la fila: fecha de la sesión (`date +%Y-%m-%d`, nunca la del commit), tema, bloque propuesto (`—` si no encaja) y evidencia (`apuntes/<TEMA>.md` si hay apunte, `consulta` si no).
-- Un tema por fila. Actualizar la cobertura del bloque y mover los `[VERIFICAR]` abiertos a pendientes.
+- **Guardar la lección** en `apuntes/<TEMA>.md` con `assets/plantilla-leccion.md`: tres capas, ejemplo resuelto, ejercicios, resumen, siguiente tema y `[VERIFICAR]` pendientes.
+- **Registrar** en `apuntes/TEMARIO-REALIZADO.md` una fila con la fecha de la sesión (`date +%Y-%m-%d`, nunca la del commit), el tema, el bloque propuesto (`—` si no encaja) y la evidencia (`apuntes/<TEMA>.md`).
+- Actualizar la cobertura del bloque y mover los `[VERIFICAR]` abiertos a pendientes.
 
-Las reglas completas están en la sección «Cómo se mantiene» de ese registro.
+Nombre: `<TEMA>.md` en mayúsculas (`ICP.md`, `ITC-BT-14.md`). Una duda suelta sin clase no genera lección: se registra con evidencia `consulta`. Reglas del registro: en su sección «Cómo se mantiene».
 
 ## Output Contract
 - Explicación en tres capas.
 - Ejercicios propuestos, sin soluciones salvo petición.
 - Prerrequisitos detectados y siguiente tema.
 - Marcadores `[VERIFICAR]` pendientes.
-- Registro actualizado en `apuntes/TEMARIO-REALIZADO.md` (si el proyecto tiene `apuntes/`).
+- Lección en `apuntes/<TEMA>.md` y registro actualizado en `apuntes/TEMARIO-REALIZADO.md` (si el proyecto tiene `apuntes/`).
 
 ## References
 - `references/temario.md` — temario **propuesto** (plan de estudio)
-- `apuntes/TEMARIO-REALIZADO.md` — temario **realizado** (registro, en la raíz del proyecto)
+- `apuntes/` — lecciones (`<TEMA>.md`) y temario **realizado** (`TEMARIO-REALIZADO.md`)
 - `assets/plantilla-leccion.md`
 - Corpus normativo del proyecto: `references/rebt_salida/md/` y `references/rebt_salida/tablas/_v2/`

@@ -65,14 +65,16 @@ Comparación con los 12 bloques del temario propuesto.
 
 ## Cómo se mantiene este registro
 
-**Automático.** La skill `tutor-electrotecnia` lo actualiza antes de cerrar cada turno, sin que haya que pedirlo. Las reglas están en el «Protocolo de registro» de `skills/tutor-electrotecnia/SKILL.md`.
+**Automático.** La skill `tutor-electrotecnia` lo actualiza antes de cerrar cada turno, sin que haya que pedirlo. Las reglas están en «Cierre de clase» de `skills/tutor-electrotecnia/SKILL.md`.
 
-Qué hace en cada sesión:
+Al terminar cada clase:
 
-1. Añadir una fila a la tabla **Registro** con la fecha de la sesión.
-2. Actualizar la fila correspondiente en **Cobertura por bloque**.
-3. Si la duda generó un apunte en `apuntes/`, enlazarlo en la columna **Evidencia**.
-4. Si quedó algo sin verificar, añadirlo a **Pendientes de verificación**.
-5. Actualizar **Siguiente tema**.
+1. Se guarda la lección en `apuntes/<TEMA>.md` (no hace falta pedirlo).
+2. Se añade una fila a la tabla **Registro** con la fecha de la sesión.
+3. Se actualiza la fila correspondiente en **Cobertura por bloque**.
+4. Si quedó algo sin verificar, se añade a **Pendientes de verificación**.
+5. Se actualiza **Siguiente tema**.
+
+Una duda suelta sin clase no genera lección: se registra con evidencia `consulta`.
 
 Ajustes manuales permitidos: corregir una fecha, reclasificar un tema, marcar un bloque como `hecho`.
