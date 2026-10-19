@@ -1,5 +1,7 @@
 # Lección: [TEMA]
 
+**Fecha**: [AAAA-MM-DD] · **Bloque**: [nº del temario propuesto o —]
+
 ## En una frase
 [Idea central]
 

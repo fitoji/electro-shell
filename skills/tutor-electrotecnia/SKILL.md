@@ -17,15 +17,17 @@ metadata:
 - Un ejercicio resuelto muestra fórmula, datos, sustitución y resultado con unidades.
 - Si el alumno resuelve un ejercicio, corregir sin dar la solución completa hasta que lo pida.
 - Normativa: buscarla en el corpus del proyecto `references/rebt_salida/` (texto en `md/ITC-BT-XX.md`, valores en `tablas/_v2/`) y citar `[FUENTE: md/ITC-BT-XX.md §Y]`; sin corpus o sin cobertura, `[VERIFICAR: ITC-BT-XX]`.
+- **Registro automático**: todo tema explicado o duda resuelta se anota en `apuntes/TEMARIO-REALIZADO.md` antes de cerrar el turno, sin que lo pidan. Sin `apuntes/` en el proyecto, omitirlo.
 
 ## Decision Gates
 | Situación | Acción |
 | --- | --- |
-| Tema no está en `references/temario.md` | Explicarlo y proponer añadirlo al temario |
+| Temas fuera del temario propuesto | Explicarlo y proponer añadirlo al temario |
 | El alumno pide solo el resultado | Dar resultado y una línea de método |
 | Concepto con relaciones entre ideas | Ofrecer un diagrama con `mermaid-diagramas` |
 | El alumno falla dos veces | Retroceder al prerrequisito del temario |
 | El tema toca normativa REBT/ITC | Citar del corpus `[FUENTE: md/ITC-BT-XX.md §Y]` si está; si no, `[VERIFICAR]` |
+| Se explicó un tema o se resolvió una duda | Registrar en `apuntes/TEMARIO-REALIZADO.md`; si generó apunte, enlazarlo |
 
 ## Execution Steps
 1. Ubicar el tema en `references/temario.md` y sus prerrequisitos; consultar con `memoria-aprendizaje` los errores y conceptos previos de ese tema y adaptar la explicación.
@@ -33,14 +35,26 @@ metadata:
 3. Proponer 2–3 ejercicios de dificultad creciente con `assets/plantilla-leccion.md`.
 4. Corregir respuestas indicando el paso donde está el error; guardar el error nuevo o recurrente con `memoria-aprendizaje`.
 5. Cerrar con un resumen de tres líneas y el siguiente tema; guardar el concepto si costó entenderlo.
+6. **Registrar** en `apuntes/TEMARIO-REALIZADO.md` (ver «Registro de estudio»).
+
+## Registro de estudio (automático)
+
+`apuntes/TEMARIO-REALIZADO.md` registra lo **realmente estudiado**, no lo propuesto: admite temas fuera de orden, consultas sueltas y dudas puntuales. Se actualiza **antes** de cerrar el turno, sin que lo pidan:
+
+- Añadir la fila: fecha de la sesión (`date +%Y-%m-%d`, nunca la del commit), tema, bloque propuesto (`—` si no encaja) y evidencia (`apuntes/<TEMA>.md` si hay apunte, `consulta` si no).
+- Un tema por fila. Actualizar la cobertura del bloque y mover los `[VERIFICAR]` abiertos a pendientes.
+
+Las reglas completas están en la sección «Cómo se mantiene» de ese registro.
 
 ## Output Contract
 - Explicación en tres capas.
 - Ejercicios propuestos, sin soluciones salvo petición.
 - Prerrequisitos detectados y siguiente tema.
 - Marcadores `[VERIFICAR]` pendientes.
+- Registro actualizado en `apuntes/TEMARIO-REALIZADO.md` (si el proyecto tiene `apuntes/`).
 
 ## References
-- `references/temario.md`
+- `references/temario.md` — temario **propuesto** (plan de estudio)
+- `apuntes/TEMARIO-REALIZADO.md` — temario **realizado** (registro, en la raíz del proyecto)
 - `assets/plantilla-leccion.md`
 - Corpus normativo del proyecto: `references/rebt_salida/md/` y `references/rebt_salida/tablas/_v2/`
